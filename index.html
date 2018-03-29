@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+
+        <!-- Links -->
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+        <!-- css -->
+        <link rel="stylesheet" href="assets/styling/styles.css">
+        <!-- firebase -->
+        <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="container">
+                <header class="header">
+                    <div class="jumbotron">
+                        <h1>FireBase Train Times</h1>
+                    </div>
+                </header>
+            </div>
+            <div class="container">
+                <main class="main">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="panel panel-primary panel-styling">
+                                <div class="panel-heading">
+                                    <h2>Train Times</h2>
+                                </div>
+                                <div class="panel-body">
+                                    <div class="table-responsive">
+                                        <table class="table" id="trainTimes">
+                                            <thead>
+                                                <tr>
+                                                    <th>Train Name</th>
+                                                    <th>Destination</th>
+                                                    <th>Frequency</th>
+                                                    <th>Next Arrival</th>
+                                                    <th>Minutes Away</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="panel panel-primary panel-styling">
+                                <div class="panel-heading">
+                                    <h2>Train Time Input</h2>
+                                </div>
+                                <div class="panel-body">
+                                    <form action="">
+                                        <div class="form-group">
+                                            <label for="trainName">Train Name</label>
+                                            <input class="form-control" id="trainName" type="text">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="destination">Destination</label>
+                                            <input class="form-control" id="destination" type="text">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="firstTrainTime">First Train Time (HH:mm - military time)</label>
+                                            <input class="form-control" id="firstTrainTime" type="text">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="frequency">Frequency (mm)</label>
+                                            <input class="form-control" id="frequency" type="text">
+                                        </div>
+                                        <button class="btn btn-primary" type="submit" id="addTrain">Submit</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </div>
+        <footer class="footer page-footer font-small pt-4 mt-4">
+            <div class="footer-copyright py-3 text-center">
+                <div class="container-fluid">
+                    &copy; 2018 Copyright; Majid jamaleldine
+                </div>
+            </div>
+        </footer>
+
+
+        <!-- Scripts -->
+        <!-- jquery -->
+        <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <!-- javascript -->        
+        <script type="text/javascript" src="assets/js/trainTimes.js"></script>
+    </body>
+</html>
